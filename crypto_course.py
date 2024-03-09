@@ -73,10 +73,10 @@ finally:
             
 
             # Widget de sélection de date pour la date minimale
-            date_min = st.date_input("Minimal", value=min_value_date, min_value = min_value_date, max_value=max_value_date)
+            date_min = st.date_input("Minimum", value=min_value_date, min_value = min_value_date, max_value=max_value_date)
 
             # Widget de sélection de date pour la date maximale
-            date_max = st.date_input("Maximale", value=max_value_date, min_value = min_value_date, max_value=max_value_date)
+            date_max = st.date_input("Maximum", value=max_value_date, min_value = min_value_date, max_value=max_value_date)
             
             st.subheader("Dates choisies")
             st.write(f"Minimum : {date_min.strftime('%d/%m/%Y')}")
